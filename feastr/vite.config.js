@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react(), VitePWA({
     registerType: 'prompt',
-    injectRegister: false,
+    injectRegister: true,
 
     pwaAssets: {
       disabled: false,
@@ -14,11 +14,30 @@ export default defineConfig({
     },
 
     manifest: {
-      name: 'feastr',
-      short_name: 'feastr',
-      description: 'feastr',
-      theme_color: '#FF6B6B',
+      name: 'Feastr',
+      short_name: 'Feastr',
+      description: 'Feastr - Your Progressive Web App',
+      theme_color: '#FF6B6B', // App theme color
+      background_color: '#ffffff', // App background color on launch
+      start_url: '/', // Start URL (when the app is launched)
+      display: 'standalone', // Display mode (standalone for PWA behavior)
+      "orientation": "portrait",
+      "prefer_related_applications": false,
+      icons: [
+        {
+          src: '/pwa-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: '/pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'maskable',
+        },
+      ],
     },
+    
 
     workbox: {
       globPatterns: ['**/*.{js,css,html,svg,png,ico}'],

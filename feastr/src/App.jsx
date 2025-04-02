@@ -62,6 +62,7 @@ function App() {
           sx={{
             position: 'sticky',
             width:'100%',
+            
             bottom: 0,
             left: 0,
             right: 0,
@@ -76,7 +77,7 @@ function App() {
             sx={{
               backgroundColor: muiTheme.palette.primary.main,
               color:muiTheme.palette.primary.light,
-            
+              borderRadius:'25px 25px 0px 0px',
             }}
           >
             <BottomNavigationAction  sx={{

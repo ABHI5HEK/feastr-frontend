@@ -53,7 +53,7 @@ function App() {
         >
           {/* Dynamic content based on Bottom Navigation selection */}
           <Typography variant="h4" sx={{ textAlign: 'center' }}>
-            {`Page ${value + 1}`}
+            {`Page Test ${value + 1}`}
           </Typography>
         </Box>
 

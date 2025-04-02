@@ -1,0 +1,7 @@
+deployment:
+  branch: main
+  document_root: /home1/appdashb/public_html
+  commands:
+    - npm install  # Install dependencies
+    - npm run build  # Build the React app
+    - cp -r build/* /home/appdashb/public_html  # Copy build files to public_html

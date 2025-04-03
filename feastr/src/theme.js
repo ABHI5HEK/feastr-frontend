@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
 // Chakra theme colors
 const chakraTheme = {
@@ -75,4 +75,4 @@ const muiTheme = createTheme({
   },
 });
 
-export default muiTheme;
+export default responsiveFontSizes(muiTheme);
